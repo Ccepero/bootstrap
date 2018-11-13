@@ -12,22 +12,38 @@
     <title>Hello, world!</title>
 </head>
 <body>
-    <nav class="p-3 navvbar navbar bg-light justify-content-center">
-        <ul class="nav container">
-        <li class="nav-item">
-            <strong><a class="nav-link disabled" href="#">LorenIpsumBootstrap</a></strong>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="#">Content</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
-        </li>
+<!--Navbar-->
+<nav class="navbar navbar-light dark-blue-text bg-light lighten-4">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Lauren Ipsum</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item px-2">
+                <a href="{% url 'home' %}" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item px-2">
+                <a href="{% url 'home' %}" class="nav-link active">Info</a>
+            </li>
+            <li class="nav-item px-2">
+                <a href="{% url 'home' %}" class="nav-link active">Gallery</a>
+            </li>
         </ul>
-    </nav>
+        <!-- Links -->
+
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
     <div class="container">
         <div class="p-4 row border border-color-blue">
             <div class="col-sm-6">
